@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/imahe/arjay-low-resolution-logo-black-on-transparent-background.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+      <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+      <div id="img_here"></div>
+    </div>
+    <header
+      id="header"
+      class="animated slideInDown"
+      style="animation-delay: 1.8s"
+    >
+      <table>
+        <tr>
+          <td id="logo">portfolio.</td>
+          <td id="navigation">
+            <a href="#bio">about</a>
+            <a href="#other">other</a>
+            <a href="#skill">skills</a>
+            <a href="#project">project</a>
+            <a href="#contact">contact</a>
+          </td>
+        </tr>
+      </table>
+    </header>
+    <section>
+      <table id="top_part">
+        <tr>
+          <td
+            id="about"
+            class="animated slideInLeft"
+            style="animation-delay: 2s"
+          >
+            <h1>
+              Arjay Bermundo <br />
+              a Web Devoloper
+            </h1>
+            <br>
+            <br>
+            <a href="https://m.me/andriod.arpzZ"><button  class="btn_one">Hire Me</button></a>
+
+            <!-- <button  class="btn_one">Hire Me</button><br /> -->
+            <table>
+              <tr>
+                <td class="animated zoomIn" style="animation-delay: 2.2s">
+                  <a
+                    href="https://www.facebook.com/andriod.arpzZ"
+                    class="social"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </td>
+                <td class="animated zoomIn" style="animation-delay: 2.4s">
+                  <a href="https://twitter.com/ArjayBermundo" class="social"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </td>
+                <td class="animated zoomIn" style="animation-delay: 2.6s">
+                  <a href="https://www.instagram.com/arpzzilla/" class="social"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </td>
+                <td class="animated zoomIn" style="animation-delay: 2.8s">
+                  <a
+                    href="https://www.youtube.com/channel/UCs43KKmE1YJHn3Hj_ljpuCA"
+                    class="social"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </td>
+                <td class="animated zoomIn" style="animation-delay: 3s">
+                  <a href="https://github.com/jayzilla25" class="social"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td
+            id="rightImage"
+            class="animated jackInTheBox"
+            style="animation-delay: 2.2s"
+          ></td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <div id="bio">
+        <h1>about</h1>
+        <p>
+          Passionate, curious and always learning. Exploring the world one step
+          at a time and sharing my journey through stories and pictures.
+          #LifeIsAnAdventure
+        </p>
+      
+
+        <!-- ------------------------------------------- -->
+        <div class="row">
+          <div class="col">
+            <p>Name : Arjay Bermundo</p>
+            <p>Civil Status : Single</p>
+          </div>
+          <div class="col">
+            <p>Age : 30</p>
+            <p>Birtthday : March 10 1992</p>
+          </div>
+          <div class="col">
+            <p>Live in : Quezon</p>
+            <p>Form : Batangas</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>Phone : 09099815920</p>
+            <p>Email : bermundojay25@gmail.com</p>
+          </div>
+          <div class="col">
+            <p> Religion : Born Again Christian</p>
+            <p>Freelance : Available</p>
+          </div>
+          <div class="col">
+            <p>Hobbies : Playing music instruments</p>
+            <p>Motto : Start your day with a prayer</p>
+            
+          </div>
+        
+        </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="other">
+        <h1>Other</h1>
+        <div id="photos">
+          <img
+            onclick="magnify($(this).attr('src'))"
+            src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t1.6435-9/159291437_3916041891808796_502006469375854296_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGDh2bYN6AE7YIfKv42hKEaZXzGETutxO5lfMYRO63E7pKEGFVMm5YoHewvGwtYerf9Fm0EFhneNhCHhtLDEBik&_nc_ohc=rarMkCBbxyYAX-NUivn&_nc_ht=scontent.fmnl4-5.fna&oh=00_AfAf7q967w0iXOpq2E6ouwQ1cr5-tSGI00-mT6jB_KBUqA&oe=63EF3401"
+          />
+          <img
+            onclick="magnify($(this).attr('src'))"
+            src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.6435-9/42771255_1981616561918015_3300018545420664832_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHC2_d7CqIp9y3aFYbQY_nTIUKNhjq4rFchQo2GOrisV5xzqnMwSkNjxFOZQWm3VUBSAdKADj0T-b3TjJnfwUHg&_nc_ohc=j_1nU9CIjEAAX9GQoIs&_nc_ht=scontent.fmnl4-2.fna&oh=00_AfDQOmPbeocTn4MoR2EwduhixW2MN4Ql5GgWsea0wpwBoQ&oe=63EF3FB9"
+          />
+          <img
+            onclick="magnify($(this).attr('src'))"
+            src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.6435-9/60395943_2307431262669875_2834844201097625600_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeHjYqnhZSIck6JeIM39Me5fQz0hfzQ2d8BDPSF_NDZ3wHWQFDZtI8g9XdtDCxhS-uruZsRrg5eOP81rO17L5O4_&_nc_ohc=NBG3Tz4iRF8AX9YqpCD&_nc_ht=scontent.fmnl4-2.fna&oh=00_AfDZ-IO6sCAzytLB3tCVS8R7Nb-tWJmj7X-Viyi7SEkO6g&oe=63EF61CF"
+          />
+          <img
+            onclick="magnify($(this).attr('src'))"
+            src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.6435-9/31588494_1776128155800191_9089264857018007552_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeG14CWwUVfek7jo8wdss2DSg8WbuT8yEjaDxZu5PzISNu17eY5_i-dlTMSLV908GGLIQErvinSpPds6nXhw6lEi&_nc_ohc=RjE1LIoszswAX_tU0Zf&_nc_ht=scontent.fmnl4-4.fna&oh=00_AfBPRYz4dn8PFi8E7CK7I_QUSZlkH2u7pB9DjnTTKYCp7A&oe=63EF5976"
+          />
+          <img
+            onclick="magnify($(this).attr('src'))"
+            src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/324437525_922774775522828_8472123125990160451_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a4a2d7&_nc_eui2=AeEImGwaKWoFpeZiy0YH9Mp2rz0FQbCIk_OvPQVBsIiT8-o40QWl2lADET0IRrVm46Hx5qi3RNaZjXiqG-ZmTT7G&_nc_ohc=LU_39GHzGUoAX-ecYgr&tn=uZ8C0hHxwZxCuh2P&_nc_ht=scontent.fmnl4-4.fna&oh=00_AfCKn4Ji3uJZshXTGBosAH9RlnCC2FKX-M__6KmVm6eB6Q&oe=63CD34FB"
+          />
+          <img
+            onclick="magnify($(this).attr('src'))"
+            src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/225464248_4328120120600969_6301993218333135752_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeH7mwDdy8Bc1I_Vv9yC0l6CdO7bKqsm0F107tsqqybQXXQLUzPc488MGPVrJwAPJrcwvWj-l8qFNlR0DGG_-Vrq&_nc_ohc=Kz58RemXkNYAX9QDGVt&_nc_ht=scontent.fmnl4-2.fna&oh=00_AfBmTUt888FZu4bH2qTWLPUbx68SzEhzKXQLMBaBnLAQSQ&oe=63CCA212"
+          />
+          <img
+            onclick="magnify($(this).attr('src'))"
+            src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/325602931_595902985635803_2186312319723632904_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHx7-qcPgXeJvhrLybWMepTqZg_3jed96CpmD_eN533oGUyB0aXzpBZloiZBgOMx7WC7oYwER9C1t9_hXM-OxPL&_nc_ohc=-x4mI9JIwtkAX9UHs5j&_nc_ht=scontent.fmnl4-4.fna&oh=00_AfD2Y131k9nku12DURdMKnWaDau4V2XNMZESqN8ySaRzBA&oe=63CD56CC"
+          />
+          <img
+            onclick="magnify($(this).attr('src'))"
+            src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.6435-9/124016830_3590188884394100_867158451192079862_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeG-e-hd952E9FFyS5Ltxx86EbVhWYRYPDsRtWFZhFg8O5s9vMnEiZzUlnO-C2sPMI-AZuRkKC8RkjK7ppFGeUDW&_nc_ohc=JiUbpjWt358AX9aXKrI&_nc_ht=scontent.fmnl4-6.fna&oh=00_AfAQ3FZ3ZCtBLfyGZi8fVTJbiU-8_eVTLgEC7KfAz4aSeQ&oe=63EF50C7"
+          />
+          <img
+            onclick="magnify($(this).attr('src'))"
+            src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/314663736_116983274536315_7658843572336743087_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFtXP9AflOw7132Bk36s_ZPP395j5wlH3w_f3mPnCUffDtHkPATvCmruxO7bp6EZ8E39ObGkVkqHLG52rVE4fgY&_nc_ohc=PoEUV7jl4hAAX9P2Oz2&_nc_ht=scontent.fmnl4-4.fna&oh=00_AfBSvN1JSbJrIxVZNxHum_5zcm4tOXwc7GYWtIWf5tSFDg&oe=63CE8A8C"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------- -->
+
+    <section>
+      <div id="skill">
+        <h1>Skills</h1>
+        <div class="row">
+          <div class="col">
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fab fa-html5 fa-4x"></i>
+                </div>
+                <h4>HTML</h4>
+                <p>
+                  Becoming a Web Developer requires that you become proficient at several different technical skills. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fab fa-css3-alt fa-4x"></i>
+                </div>
+                <h4>CSS</h4>
+                <p>
+                  Becoming a Web Developer requires that you become proficient at several different technical skills. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa-brands fa-bootstrap fa-4x"></i>
+
+
+                </div>
+                <h4>Bootstrap</h4>
+                <p>
+                  Becoming a Web Developer requires that you become proficient at several different technical skills. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fab fa-js fa-4x"></i>
+                </div>
+                <h4>Javascript</h4>
+                <p>
+                  Becoming a Web Developer requires that you become proficient at several different technical skills. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fab fa-node fa-4x"></i>
+                </div>
+                <h4>NodeJs</h4>
+                <p>
+                  Becoming a Web Developer requires that you become proficient at several different technical skills. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa-brands fa-mdb fa-4x"></i>
+                </div>
+                <h4>MongoDB</h4>
+                <p>
+                  Becoming a Web Developer requires that you become proficient at several different technical skills. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -----------------------------------Project--------------------------------------------- -->
+
+    <section>
+      <div id="project">
+        <h1>Project</h1>
+        <div class="row">
+          <div class="col">
+            <div class="slide-container">
+              <div class="slide-content">
+                <div class="card-wrapper">
+                  <div class="card">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                        <img src="/img/h2big.png" alt="" class="card-img" />
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <h2 class="name">H2Big</h2>
+                      <p class="description">
+                        The explorer continued to explore the website,learning more and more about its secrets.
+                      </p>
+                      <a href="https://funny-cajeta-599601.netlify.app"><button class="but">Live Demo</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ------------------------------- -->
+          <div class="col">
+            <div class="slide-container">
+              <div class="slide-content">
+                <div class="card-wrapper">
+                  <div class="card">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                        <img src="/img/hotel.png" alt="" class="card-img" />
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <h2 class="name">Hotel</h2>
+                      <p class="description">
+                        The explorer continued to explore the website,learning more and more about its secrets.
+                      </p>
+                      <a href="https://thunderous-bienenstitch-a9b0f9.netlify.app"><button class="but">Live Demo</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="slide-container">
+              <div class="slide-content">
+                <div class="card-wrapper">
+                  <div class="card">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                        <img
+                          src="/img/guess the number.png"
+                          alt=""
+                          class="card-img"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <h2 class="name">Guessing number</h2>
+                      <p class="description">
+                        The explorer continued to explore the website,learning more and more about its secrets.
+                      </p>
+                      <a href="https://wonderful-bublanina-9f4124.netlify.app"><button class="but">Live Demo</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ------------------------------- -->
+          <div class="col">
+            <div class="slide-container">
+              <div class="slide-content">
+                <div class="card-wrapper">
+                  <div class="card">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                        <img src="/img/pig game.png" alt="" class="card-img" />
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <h2 class="name">Pig-Game</h2>
+                      <p class="description">
+                        The explorer continued to explore the website,learning more and more about its secrets.
+                      </p>
+                     
+                      <a href="https://vocal-capybara-574a30.netlify.app"><button class="but">Live Demo</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------------------------- -->
+        <div class="row">
+          <div class="col">
+            <div class="slide-container">
+              <div class="slide-content">
+                <div class="card-wrapper">
+                  <div class="card">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                        <img src="/img/newsgrid.png" alt="" class="card-img" />
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <h2 class="name">NewsGrid</h2>
+                      <p class="description">
+                        The explorer continued to explore the website,learning more and more about its secrets.
+                      </p>
+                      <a href="https://stupendous-stroopwafel-f04c5a.netlify.app"><button class="but">Live Demo</button></a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ------------------------------- -->
+          <div class="col">
+            <div class="slide-container">
+              <div class="slide-content">
+                <div class="card-wrapper">
+                  <div class="card">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                        <img
+                          src="/img/kodeledger.png"
+                          alt=""
+                          class="card-img"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <h2 class="name">KodeLedger</h2>
+                      <p class="description">
+                        The explorer continued to explore the website,learning more and more about its secrets.
+                      </p>
+                      <a href="https://celebrated-twilight-3bd2a1.netlify.app"><button class="but">Live Demo</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="contact">
+      <h1>contact</h1>
+      <table>
+        <tr>
+          <td>
+            <div id="inner_div">
+              <table id="inner_table">
+                <tr>
+                  <td><i class="fas fa-phone"></i> &nbsp; 042-784-4010</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fas fa-at"></i> &nbsp; bermundojay25@gmail.com
+                  </td>
+                </tr>
+                <tr>
+                  <td><i class="fas fa-mobile"></i> &nbsp; 0909 9815 920</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div id="address">Candelaria Quezon, Philippine.</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/andriod.arpzZ"
+                      class="social"
+                      ><i class="fab fa-facebook"></i
+                    ></a>
+                    <a href="https://twitter.com/ArjayBermundo" class="social"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/arpzzilla/"
+                      class="social"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a
+                      href="https://www.youtube.com/channel/UCs43KKmE1YJHn3Hj_ljpuCA"
+                      class="social"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                    <a href="https://github.com/jayzilla25" class="social"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td>
+            <form>
+              <input type="text" placeholder="name" required />
+              <input type="email" placeholder="email" required /><br />
+              <textarea placeholder="your message" required rows="5"></textarea
+              ><br />
+              <button class="btn_one">send</button>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="footer">
+      made on earth by a human <br />
+      <a href="#">Arjay Bermundo</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
